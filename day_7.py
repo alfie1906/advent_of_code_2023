@@ -28,13 +28,7 @@ def sort_two_list(list_1, list_2):
         hand_a = list_1[i]['hand']
         hand_b = list_2[j]['hand']
         winning_hand = higher_hand(hand_a, hand_b)
-        """
-        if 'J' in hand_a or 'J' in hand_b:
-            print('-'*40)
-            print(hand_a)
-            print(hand_b)
-            print(winning_hand)
-        """
+
         if winning_hand == 'hand_b':
             final_list.append(list_1[i])
             i += 1
@@ -159,10 +153,6 @@ def hand_strength(hand: str) -> int:
         strength = 1
     else:
         strength = 0
-        if J_count != 0:
-            print('-'*40)
-            print(hand)
-            print(strength)
 
     return strength
 
